@@ -1,0 +1,17 @@
+html,
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+button {
+	font-size: 16px;
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 10px;
+	background-color: #eaeaea;
+}
+button:focus {
+	background-color: #aaa;
+}

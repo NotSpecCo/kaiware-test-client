@@ -1,0 +1,22 @@
+{
+	"id": "io.nothingspecial.kaiware-test-client",
+	"name": "Kaiware Test Client",
+	"description": "Test Kaiware functionality",
+	"version": "0.1.0",
+	"launch_path": "/index.html",
+	"theme_color": "#e4572e",
+	"focus_color": "#e4572e",
+	"developer": {
+		"name": "Garrett Downs",
+		"url": "https://nothingspecial.io"
+	},
+	"type": "privileged",
+	"permissions": {},
+	"locales": {
+		"en-US": {
+			"name": "Kaiware Test Client",
+			"description": "Test Kaiware functionality"
+		}
+	},
+	"default_locale": "en-US"
+}
