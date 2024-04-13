@@ -1,0 +1,40 @@
+{
+	"name": "kaiware-test-client",
+	"version": "1.0.0",
+	"description": "Just load the root folder as a packaged app in Waterfox Classic.",
+	"author": {
+		"name": "Garrett Downs",
+		"url": "https://nothingspecial.io"
+	},
+	"homepage": "https://github.com/nothingspecialdev/kaiware-test-client",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nothingspecialdev/kaiware-test-client"
+	},
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"build": "rollup -c",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"license": "ISC",
+	"dependencies": {
+		"@babel/runtime": "^7.24.4",
+		"@nothing-special/kaiware-lib": "^0.3.0"
+	},
+	"devDependencies": {
+		"@babel/plugin-syntax-dynamic-import": "^7.8.3",
+		"@babel/plugin-transform-runtime": "^7.24.3",
+		"@babel/preset-env": "^7.24.4",
+		"@rollup/plugin-babel": "^6.0.4",
+		"@rollup/plugin-commonjs": "^25.0.7",
+		"@rollup/plugin-node-resolve": "^15.2.3",
+		"@rollup/plugin-replace": "^5.0.5",
+		"@rollup/plugin-typescript": "^11.1.6",
+		"@types/rollup": "^0.54.0",
+		"rollup": "^4.14.1",
+		"rollup-plugin-copy": "^3.5.0",
+		"tslib": "^2.6.2",
+		"typescript": "^5.4.4"
+	}
+}
