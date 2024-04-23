@@ -1,25 +1,33 @@
 import { Kaiware } from '@nothing-special/kaiware-lib/lib';
 
+let kaiware: Kaiware | null = null;
+
 async function start() {
-	await Kaiware.connect({
+	kaiware = new Kaiware({
 		deviceId: 'my-device',
 		deviceName: 'My Device',
 		address: '192.168.0.1',
 		port: 3000,
-		sourceId: 'my-app'
+		sourceId: 'my-app',
+		enableConsoleLogHook: true,
+		enableConsoleWarnHook: true,
+		enableConsoleErrorHook: true,
+		enableGlobalErrorListener: false,
+		enableNetworkRequestHook: true
 	});
+	kaiware.connect();
 }
 
 start();
 
 document.querySelector('#send-log-info')?.addEventListener('click', function () {
-	Kaiware.log.info('This is an info message');
+	kaiware?.log.info('This is an info message');
 });
 document.querySelector('#send-log-warn')?.addEventListener('click', function () {
-	Kaiware.log.warn('This is a warning message');
+	kaiware?.log.warn('This is a warning message');
 });
 document.querySelector('#send-log-error')?.addEventListener('click', function () {
-	Kaiware.log.error(new Error('This is an error message'));
+	kaiware?.log.error(new Error('This is an error message'));
 });
 document.querySelector('#add-element')?.addEventListener('click', function () {
 	addElement();
